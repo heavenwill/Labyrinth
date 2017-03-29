@@ -5,14 +5,11 @@ class Map{
 	class Tile{
 	private:
 		tag value;
-		bool up = false;
-		bool down = false;
-		bool left = false;
-		bool right = false;
+		bool up, down, left, right;
 		
 	public:
-		Tile(tag g){
-			this.value = g;
+		Tile(tag g) : up(false), down(false), left(false),right(false){
+			value = g;
 		}
 		
 	};
