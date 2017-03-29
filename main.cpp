@@ -10,10 +10,10 @@ class Map{
 public:
     Map(int y, int x){
     	array=new *Tile	[y];
-    	for (int i = 0; i < x; i ++) t[i] = new Kletka[n];
+    	for (int i = 0; i < x; i ++) t[i] = new Tile[n];
 	}
 	~Map(){
-		
+		delete [] array;
 	}
 	
 };
