@@ -24,7 +24,7 @@ private:
 public:
 	Map(int x, int y){
     		array = new *Tile	[x];
-    		for (int i = 0; i < y; i++) t[i] = new Tile[n];
+    		for (int i = 0; i < x; i++) array[i] = new Tile[y];
 		this.sizeX = x;
 		this.sizeY = y;
 	}
