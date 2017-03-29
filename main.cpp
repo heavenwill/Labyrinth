@@ -20,7 +20,7 @@ private:
     	Tile **array;
 public:
 	Map(int x, int y){
-    		Tile **array = new *Tile	[x];
+    		Tile **array = new Tile*[x];
     		for (int i = 0; i < x; i++) array[i] = new Tile[y];
 		this.sizeX = x;
 		this.sizeY = y;
