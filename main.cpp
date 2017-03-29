@@ -8,8 +8,8 @@ class Map{
 		bool up, down, left, right;
 		
 	public:
-		Tile(tag g) : up(false), down(false), left(false),right(false){
-			value = g;
+		Tile() : up(false), down(false), left(false),right(false){
+			value = empty;
 		}
 		
 	};
@@ -20,10 +20,10 @@ private:
     	Tile **array;
 public:
 	Map(int x, int y){
-    		Tile **array = new Tile*[x];
+    		array = new Tile*[x];
     		for (int i = 0; i < x; i++) array[i] = new Tile[y];
-		this.sizeX = x;
-		this.sizeY = y;
+		sizeX = x;
+		sizeY = y;
 	}
 	
 	~Map(){
